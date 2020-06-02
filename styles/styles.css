@@ -1,0 +1,19 @@
+:root {
+  /* css custom properties */
+  --primary-links: #4d1d18;
+  --primary-hover: #555555;
+  --major-headings: #87423c;
+  --sub-heading: #4d1d18;
+  --line-height: 150%;
+  --footer-text: #87423c;
+  --footer-links: #87423c;
+}
+
+body {
+  font-family: calibri, helvetica, sans-serif;
+}
+
+.main-navigation a {
+ color: var(--primary-links);
+}
+
