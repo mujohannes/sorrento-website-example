@@ -78,9 +78,51 @@ body {
 
 .content {
   min-height: 80vh;
+  max-width: 1000px;
+  margin: auto;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat( 4, auto );
+  grid-gap: 1rem;
+}
+.video {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.home-secondary {
+  background-color: var(--pine-green);
+  background-image: url('../assets/ocean_beach3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -100px;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
+}
+.cta-button-secondary {
+  background-color: var(--midnight-green-eagle-green);
+  color: var(--dutch-white);
+  padding: 1rem;
+  text-decoration: none;
+  min-width: 16rem;
+  text-align: center;
+  border: var(--persian-plum) solid 1px;
+  border-radius: 1rem;
+  text-shadow: 0 0 1px black;
 }
 
 .footer {
+  margin-top: 6rem;
+  padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 8rem auto;
