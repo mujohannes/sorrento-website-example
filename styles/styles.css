@@ -8,10 +8,16 @@
   --footer-text: #87423c;
   --footer-links: #87423c;
   --header-background: #cccccc;
+  --persian-plum: hsla(5, 68%, 41%, 1);
+  --midnight-green-eagle-green: hsla(190, 74%, 37%, 1);
+  --pine-green: hsla(177, 91%, 48%, 1);
+  --dutch-white: hsla(41, 21%, 84%, 1);
+  --cultured: hsla(204, 2%, 96%, 1);
 }
 
 body {
   font-family: calibri, helvetica, sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -45,6 +51,29 @@ body {
 
 .main-navigation a:hover {
   color: var(--primary-hover);
+}
+
+.home-banner {
+  background-image: url(../assets/tiraya-adam-_mkb0Vby9tA-unsplash.jpg);
+  min-height: 60vh;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: var(--midnight-green-eagle-green);
+  color: var(--dutch-white);
+  padding: 1rem;
+  text-decoration: none;
+  min-width: 16rem;
+  text-align: center;
+  border: var(--persian-plum) solid 1px;
+  border-radius: 1rem;
+  margin-top: 20rem;
+  text-shadow: 0 0 1px black;
 }
 
 .content {
@@ -81,9 +110,11 @@ body {
   justify-self: end;
   align-self: start;
 }
+
 .social-navigation h3 {
   margin: 0;
 }
+
 .social-navigation a {
   display: block;
   padding: 1rem;
@@ -98,12 +129,14 @@ body {
   flex-direction: row;
   align-self: end;
 }
+
 .footer-navigation a {
   padding: 1rem;
   color: var(--primary-links);
   text-decoration: none;
 }
-.footer-navigation a:hover{
+
+.footer-navigation a:hover {
   color: var(--primary-hover);
 }
 
@@ -124,7 +157,8 @@ body {
   text-decoration: none;
 }
 
-.main-navigation a.active, .footer-navigation a.active {
+.main-navigation a.active,
+.footer-navigation a.active {
   background-color: var(--primary-links);
   color: #eeeeee;
 }
