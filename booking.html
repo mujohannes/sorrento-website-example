@@ -27,11 +27,56 @@
         <div class="booking-grid">
           <div class="form-group">
             <label for="checkin">Check in date</label>
-            <input type="date" id="checkin" placeholder="check in date">
+            <input class="full" tabindex="1" type="date" id="checkin" placeholder="check in date" name="checkin">
           </div>
           <div class="form-group">
             <label for="checkout">Check out date</label>
-            <input type="date" id="checkout" placeholder="check out date">
+            <input class="full" tabindex="2" type="date" id="checkout" placeholder="check out date" name="checkout">
+          </div>
+          <div class="form-group">
+            <label for="adults">Number of adults</label>
+            <input type="number" tabindex="3" id="adults" value="1" min="1" max="6" name="adults">
+          </div>
+          <div class="form-group">
+            <label for="children">Number of children</label>
+            <input type="number" tabindex="4" id="children" value="0" min="0" max="6" name="children">
+          </div>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input class="full" tabindex="5" type="text" id="name" placeholder="Jane Smith" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input class="full" tabindex="6" type="email" id="email" placeholder="janesmith@example.com" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Your contact number</label>
+            <input class="full" tabindex="7" type="text" id="phone" placeholder="0400100200" name="email">
+          </div>
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea class="full" tabindex="8" name="notes" id="notes" placeholder="notes for the host" rows="3" cols="12"></textarea>
+          </div>
+          <div class="payment">
+
+            <label class="full" for="card-type">Card Type</label><br>
+            <input type="radio" name="type" id="mc" checked value="mc">
+            <label for="mc">Mastercard</label>
+            <input type="radio" name="type" id="visa" value="visa">
+            <label for="visa">Visa</label>
+            <input type="radio" name="type" id="amex" value="amex">
+            <label for="amex">American Express</label><br>
+
+            <label class="full" for="card-number">Card Number</label><br>
+            <input type="text" name="card-number" placeholder="0000-0000-0000-0000"><br>
+            <label class="full" for="cvv">CVV</label><br>
+            <input type="text" name="cvv" id="cvv" placeholder="123"><br>
+            <label class="full" for="card-name">Name on the card</label><br>
+            <input type="text" name="card-name" id="card-name" placeholder="Jane Citizen">
+          </div>
+          <div class="buttons">
+            <button type="reset">Clear Form</button>
+            <button type="submit">Submit booking request</button>
           </div>
         </div>
       </form>
