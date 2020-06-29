@@ -169,6 +169,23 @@ textarea.full {
   background-color: var(--primary-links);
   color: white;
 }
+ /* contact page */
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dutch-white);
+  padding: 0.5em;
+}
+#dirMapLink, #largeMapLink {
+  margin: 0;
+  padding: 0.5em;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  display: inline-block;
+}
 
 .footer {
   margin-top: 6rem;

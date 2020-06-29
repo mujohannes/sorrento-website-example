@@ -25,6 +25,37 @@
     <main class="content">
       <!-- page content -->
       <!-- inquiry form -->
+      <h3>Map of Sorrrento</h3>
+      <div class="map">
+          <iframe width="800" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=800&cp=-38.34511075621796~144.73865178833012&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+          </iframe>
+          <div style="white-space: nowrap; text-align: center; width: 800px; padding: 6px 0;">
+             <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=-38.34511075621796~144.73865178833012&amp;sty=r&amp;lvl=12&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+             <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=-38.34511075621796~144.73865178833012&amp;sty=r&amp;lvl=12&amp;rtp=~pos.-38.34511075621796_144.73865178833012____&amp;FORM=MBEDLD">Get Directions</a>
+         </div>
+      </div>
+      <form id="contact-form">
+        <p class="alert">
+          Looking to book? Use our <a href="booking.html">booking form</a>
+        </p>
+        <h3>Get in touch</h3>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input required class="full" type="text" name="name" id="name" placeholder="your name">
+        </div>
+        <div class="form-group">
+          <label for="name">Your email address</label>
+          <input required class="full" type="text" name="name" id="name" placeholder="you@domain.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" class="full" name="message" rows="5" cols="12" placeholder="I have a question about..."></textarea>
+        </div>
+        <div class="buttons">
+          <button type="reset">Clear Form</button>
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </main>
     <footer class="footer">
       <a href="contact.html" class="footer-contact">
